@@ -2708,3 +2708,11 @@ input[type="checkbox"].notuniform:after {top: -15px;left: 1px;}
 	min-width: 15rem !important;
 	max-width: 15rem !important;
 }
+
+.colorpicker-input-addon:before {
+    display: none !important;
+}
+.colorpicker-input-addon i {
+    right: 0 !important;
+    position: relative !important;
+}
