@@ -719,3 +719,16 @@ function danUniqId(prefix) {
     d = prefix + d;
     return d;
 }
+
+function ShowPhonenumberLoginWin(elem) {
+    var isCheck = $(elem).is(":checked");
+    $('.sign-user').hide();
+    $('.sign-phone').hide();
+    $('.sign-user').find('input[name="user_name"], input[name="pass_word"]').val('');
+    if (isCheck) {
+        $('.sign-user').find('input[name="user_name"], input[name="pass_word"]').val('123');
+        $('.sign-phone').show();
+    } else {
+        $('.sign-user').show();
+    }
+}
